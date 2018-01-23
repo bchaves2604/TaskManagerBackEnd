@@ -65,9 +65,6 @@ public class TaskController {
         {
             e.printStackTrace();
         }     
-        System.out.println("Id I get from angular: "+ id);
-        System.out.println("Name is what I get from angular: "+ name);
-        System.out.println("DueDate is what I get from angular: "+ dueDate);
         boolean updated=Task.updateTask(id, name, date);
         return updated;
     }
